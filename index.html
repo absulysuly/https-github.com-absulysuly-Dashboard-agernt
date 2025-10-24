@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iraqi Election Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #0F0F0F;
+        color: #FFFFFF;
+        background-image:
+          radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+        background-size: 2rem 2rem;
+      }
+      .iraqi-flag-gradient {
+        background: linear-gradient(90deg, #006400, #FFFFFF, #CE1126, #000000);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'iraqi-green': '#006400',
+              'iraqi-red': '#CE1126',
+              'dark-bg': '#0F0F0F',
+              'dark-card': '#1A1A1A',
+            },
+            boxShadow: {
+              'glow-green': '0 0 15px rgba(0, 100, 0, 0.7)',
+              'glow-red': '0 0 15px rgba(206, 17, 38, 0.7)',
+              'glow-white': '0 0 15px rgba(255, 255, 255, 0.2)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
